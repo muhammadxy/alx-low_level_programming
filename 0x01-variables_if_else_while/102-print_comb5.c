@@ -15,7 +15,8 @@ while (j < 58)
 {m = j + 1;
 k = i;
 while (k < 58)
-{while (m < 58)
+{
+while (m < 58)
 {putchar(i);
 putchar(j);
 putchar(32);
