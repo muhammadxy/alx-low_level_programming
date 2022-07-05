@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main - prints Muhammadx
+* main - prints Holberton
 *
 * Description: prints Holberton
 *
@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-char text[10] = "Muhammadx";
+char text[10] = "Holberton";
 int i = 0;
 for (i = 0; i < 9; i++)
 {
