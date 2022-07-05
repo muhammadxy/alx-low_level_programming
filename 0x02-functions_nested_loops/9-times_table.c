@@ -8,31 +8,28 @@
 */
 void times_table(void)
 {
-int row, column, product, tens, ones;
-for (row = 0; row <= 9; row++)
+int col, row, mul;
+for (col = 0; col < 10; col++)
 {
-for (column = 0; column <= 9; column++)
+for (row = 0; row < 10; row++)
 {
-product = row * column;
-tens = product / 10;
-ones = product % 10;
-if (column == 0)
-{
-_putchar('0');
-}
-else if (product < 1)
+mul = col * row;
+if (mul > 9)
 {
 _putchar(',');
 _putchar(' ');
-_putchar(' ');
-_putchar(ones + '0');
+_putchar((mul / 10) + '0');
+_putchar((mul % 10) + '0');
 }
 else
 {
+if (row != 0)
+{
 _putchar(',');
 _putchar(' ');
-_putchar(tens + '0');
-_putchar(ones + '0');
+_putchar(' ');
+}
+_putchar(mul + '0');
 }
 }
 _putchar('\n');
