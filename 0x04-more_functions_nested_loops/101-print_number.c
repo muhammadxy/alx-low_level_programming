@@ -33,7 +33,6 @@ n = n * -1;
 }
 while (place >= 0)
 {
-/*defining divisor = pow(10, place);*/
 divisor = power(10, place);
 digit = ((n / divisor) % 10);
 if (digit == 0 && begin == 0)
