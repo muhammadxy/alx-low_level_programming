@@ -1,10 +1,23 @@
 #include <math.h>
-#include "main.h"
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <time.h>
+#include "main.h"
+/**
+
+ * *_strcpy - function that generate random passwords 
+ *
+
+ *: char 
+
+ *: char 
+
+ *
+
+ * Return: dest
+
+ */
+
 
 
 void randomPasswordGeneration(int N)
@@ -12,38 +25,23 @@ void randomPasswordGeneration(int N)
 {
   
   int i = 0;
+  char numbers[] = "0123456789";
+  char letter[] = "abcdefghijklmnoqprstuvwyzx";
   
-
+  char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+  
+  char symbols[] = "!@#$^&*?";
+  
   
   int randomizer = 0;
   
 
   
- srand((unsigned int)(time(NULL)));
+  srand((unsigned int)(time(NULL)));
   
-
-  
-  char numbers[] = "0123456789";
-  
-
-  
-  char letter[] = "abcdefghijklmnoqprstuvwyzx";
-  
-
-  
-  char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-  
-
-  
-  char symbols[] = "!@#$^&*?";
-  
-
-  
-  char password[N];
-  
-
-  
-   randomizer = rand() % 4;
+ char password[N];
+   
+ randomizer = rand() % 4;
   
 
   
@@ -95,19 +93,12 @@ void randomPasswordGeneration(int N)
   }
   
 }
-
 int main()
   
 {
-  
-  
-  int N = 10;
-  
- 
-  randomPasswordGeneration(N);
-  
 
-  
+  int N = 10;
+  randomPasswordGeneration(N);
   return 0;
   
 }
