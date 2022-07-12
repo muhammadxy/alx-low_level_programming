@@ -1,6 +1,8 @@
+#include <stdlib.h>
 #include <stdio.h>
 int _atoi(char* s)  
 {
+ 
 double res = 0;
 int sign = 1;
 int i = 0;
