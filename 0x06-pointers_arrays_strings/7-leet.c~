@@ -1,0 +1,18 @@
+#include "main.h"
+/**
+* *leet - function encodes a string into l337
+*
+*@n: char * pointer
+*
+* Return: char *
+*/
+char *leet(char *)
+{
+int j = 0;
+while (str[j] != '\0')
+{
+str[j] = str[j] - 30;
+j++;
+}
+return (str);
+}
