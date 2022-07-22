@@ -6,7 +6,7 @@
 *@argc: int
 *@argv: char * pointer to array
 *
-* Return: 
+* Return:
 */
 int main(__attribute__((unused)) int argc, char *argv[])
 {
